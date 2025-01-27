@@ -1,0 +1,290 @@
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    min-height: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'montserratregular';
+
+}
+main{
+    flex-grow: 1;
+}
+.conteyner {
+    width: 1110px;
+    margin: 0 auto;
+    position: relative;
+  
+}
+footer {
+    margin-top: auto;
+}
+
+/* 2222 */
+.delivery {
+    background-color: #212121;
+color: #fff;
+text-align: center;
+padding-top: 80px;
+padding-bottom: 69px;
+}
+.delivery__h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 23px;
+}
+.delivery__h2 span {
+    font-weight: normal;
+}
+.delivery__text {
+    font-size: 21px;
+    font-weight: 200;
+}
+/* man */
+.man-woman__conteyner {
+    display: flex;
+    flex-direction: row;
+}
+.man,
+.woman {
+    width: 50%;
+    padding: 60px 15px 58px;
+}
+.man-woman__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D7B399;
+    width: 80px;
+    height: 30px;
+    margin-top: 40px;
+    
+}
+.man-woman__link:hover {
+    background-color: #a17a5d;
+}
+.man-woman__h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.man-woman__h2 span {
+    font-weight: normal;
+}
+.man-sek{
+    background: rgb(249,246,241);
+    background: linear-gradient(90deg, rgba(249,246,241,1) 50%, rgba(249,224,224,1) 50%);
+}
+.man {
+    background: url(../img/man.png) no-repeat right bottom;
+}
+.woman {
+    background: url(../img/woman.png) no-repeat right bottom;
+}
+
+/*  */
+.new__con {
+text-align: center;
+padding-top: 150px;
+padding-bottom: 150px;
+}
+
+.catalod{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card
+{
+    border: 1px solid #D7B399;
+    width: 22%;
+}
+.new__h2 {
+    padding-bottom: 100px;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+.card__titlle {
+    padding-top: 25px;
+padding-bottom: 15px;
+}
+.card__price{
+    border: 0em;
+}
+.new__btn {
+    width: 220px;
+    height: 55px;
+    background-color: #D7B399;
+    border: 0em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+.new__btn:hover{
+    background-color: #a17a5d;
+}
+header{
+    min-height: 800px;
+    background-color: #f9f6f1;
+}
+.menu{
+    min-height: 90px;
+    
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+
+}
+.mailmenuitem{
+    display: block;
+   padding-right: 35px;
+
+    
+    
+    
+}
+.mailmenuitem1{
+    display: block;
+   padding-right: 35px;
+   
+    
+    
+    
+}
+.mailmenuitem2{
+    display: block;
+   padding-right: 35px;
+   
+    
+    
+    
+}
+
+.slideritem{
+    min-height: 377px;
+    background: url(../img/running_shoes_PNG5823.png) no-repeat right center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 138px;
+    margin-bottom:  130px ;
+    
+    
+}
+.text{
+    font-size: 30px;
+    
+    
+}
+.btext {
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    margin-top: 36px;
+}
+.sliderlink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D7B399;
+    width: 240px;
+    height: 55px;
+    margin-top: 54px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    
+    
+
+    
+}
+.oldprice{
+    font-size: 24px;
+    text-decoration-line: line-through;
+    text-align: right;
+    
+}
+.price {
+    color: #D84033;
+    font-size: 42px;
+    margin-top: 14px;
+    
+    margin-bottom: 450px;
+}
+.sliderutemprice{
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+@media (max-width: 1200px)
+{
+    .catalod{
+        flex-wrap: wrap;
+    }
+    .card__img{
+        width: 90%;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:992px){
+    .card
+{
+ 
+    width: 30%;
+}
+}
+@media (max-width: 768px)
+{
+    .man-woman__conteyner {
+       
+        flex-direction: column;
+    }
+    .man,
+    .woman {
+        width: 100%;
+        
+    }
+    
+    .man-sek{
+    background: rgb(249,246,241);
+    background: linear-gradient(180deg, rgba(249,246,241,1) 50%, rgba(249,224,224,1) 50%);
+}
+}
+
+@media (max-width: 576px){
+ .delyvery{
+    padding-top: 40px;
+padding-bottom: 40px;
+ }
+ .card{
+    width: 45%;
+ }
+ .new__con {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+}
